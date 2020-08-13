@@ -1,0 +1,1 @@
+/home/saumya/catkin_ws2/devel/.private/hector_mapping/share/roseus/ros/hector_mapping/msg/HectorDebugInfo.l

@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/catkin_tools/execution/stages.py", line 174, in function_proxy
+    return function(logger, event_queue, *args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/catkin_tools/jobs/utils.py", line 143, in copyfiles
+    shutil.copy(source_path, dest_path)
+  File "/usr/lib/python2.7/shutil.py", line 140, in copy
+    copymode(src, dst)
+  File "/usr/lib/python2.7/shutil.py", line 105, in copymode
+    os.chmod(dst, mode)
+OSError: [Errno 1] Operation not permitted: '/home/saumya/catkin_ws2/.catkin_tools/profiles/default/packages/quad/package.xml'
+
+Stage `cache-manifest` failed with arguments:
+  source_paths: ['/home/saumya/catkin_ws2/src/quad/package.xml']
+  dest_path: /home/saumya/catkin_ws2/.catkin_tools/profiles/default/packages/quad/package.xml

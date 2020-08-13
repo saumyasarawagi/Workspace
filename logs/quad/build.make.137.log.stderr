@@ -1,0 +1,10 @@
+In file included from [01m[K/opt/ros/melodic/include/mavros/mavros_uas.h:24:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/mavros/mavros_plugin.h:25[m[K,
+                 from [01m[K/home/saumya/catkin_ws2/src/quad/src/wind_estimation.cpp:10[m[K:
+[01m[K/opt/ros/melodic/include/eigen_conversions/eigen_msg.h:46:10:[m[K [01;31m[Kfatal error: [m[KEigen/Core: No such file or directory
+ #include [01;31m[K<Eigen/Core>[m[K
+          [01;31m[K^~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/quad.dir/src/wind_estimation.cpp.o] Error 1
+make[1]: *** [CMakeFiles/quad.dir/all] Error 2
+make: *** [all] Error 2

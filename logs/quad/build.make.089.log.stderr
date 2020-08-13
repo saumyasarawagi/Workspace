@@ -1,0 +1,40 @@
+[01m[K/home/saumya/catkin_ws2/src/quad/src/impulse_node.cpp:[m[K In function ‘[01m[Kvoid imu_cb(const ConstPtr&)[m[K’:
+[01m[K/home/saumya/catkin_ws2/src/quad/src/impulse_node.cpp:33:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kimu_data[m[K’ was not declared in this scope
+     [01;31m[Kimu_data[m[K =*msg;
+     [01;31m[K^~~~~~~~[m[K
+[01m[K/home/saumya/catkin_ws2/src/quad/src/impulse_node.cpp:33:5:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KImu_data[m[K’
+     [01;36m[Kimu_data[m[K =*msg;
+     [01;36m[K^~~~~~~~[m[K
+     [32m[KImu_data[m[K
+[01m[K/home/saumya/catkin_ws2/src/quad/src/impulse_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/saumya/catkin_ws2/src/quad/src/impulse_node.cpp:47:21:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kros::Subscriber currentHeading[m[K’
+     ros::Subscriber [01;31m[KcurrentHeading[m[K = nh.subscribe<std_msgs::Float64>("mavros/imu/data",10, imu_cb);
+                     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/saumya/catkin_ws2/src/quad/src/impulse_node.cpp:46:21:[m[K [01;36m[Knote: [m[K‘[01m[Kros::Subscriber currentHeading[m[K’ previously declared here
+     ros::Subscriber [01;36m[KcurrentHeading[m[K = nh.subscribe<std_msgs::Float64>("mavros/local_position/velocity",10, velocity_cb);
+                     [01;36m[K^~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/boost/function/detail/maybe_include.hpp:18:0[m[K,
+                 from [01m[K/usr/include/boost/function/detail/function_iterate.hpp:14[m[K,
+                 from [01m[K/usr/include/boost/preprocessor/iteration/detail/iter/forward1.hpp:52[m[K,
+                 from [01m[K/usr/include/boost/function.hpp:64[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/forwards.h:40[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/saumya/catkin_ws2/src/quad/src/impulse_node.cpp:1[m[K:
+/usr/include/boost/function/function_template.hpp: In instantiation of ‘[01m[Kstatic void boost::detail::function::void_function_invoker1<FunctionPtr, R, T0>::invoke(boost::detail::function::function_buffer&, T0) [with FunctionPtr = void (*)(const boost::shared_ptr<const geometry_msgs::TwistStamped_<std::allocator<void> > >&); R = void; T0 = const boost::shared_ptr<const std_msgs::Float64_<std::allocator<void> > >&][m[K’:
+[01m[K/usr/include/boost/function/function_template.hpp:925:38:[m[K   required from ‘[01m[Kvoid boost::function1<R, T1>::assign_to(Functor) [with Functor = void (*)(const boost::shared_ptr<const geometry_msgs::TwistStamped_<std::allocator<void> > >&); R = void; T0 = const boost::shared_ptr<const std_msgs::Float64_<std::allocator<void> > >&][m[K’
+[01m[K/usr/include/boost/function/function_template.hpp:716:7:[m[K   required from ‘[01m[Kboost::function1<R, T1>::function1(Functor, typename boost::enable_if_c<(! boost::is_integral<Functor>::value), int>::type) [with Functor = void (*)(const boost::shared_ptr<const geometry_msgs::TwistStamped_<std::allocator<void> > >&); R = void; T0 = const boost::shared_ptr<const std_msgs::Float64_<std::allocator<void> > >&; typename boost::enable_if_c<(! boost::is_integral<Functor>::value), int>::type = int][m[K’
+[01m[K/usr/include/boost/function/function_template.hpp:1061:16:[m[K   required from ‘[01m[Kboost::function<R(T0)>::function(Functor, typename boost::enable_if_c<(! boost::is_integral<Functor>::value), int>::type) [with Functor = void (*)(const boost::shared_ptr<const geometry_msgs::TwistStamped_<std::allocator<void> > >&); R = void; T0 = const boost::shared_ptr<const std_msgs::Float64_<std::allocator<void> > >&; typename boost::enable_if_c<(! boost::is_integral<Functor>::value), int>::type = int][m[K’
+[01m[K/home/saumya/catkin_ws2/src/quad/src/impulse_node.cpp:46:118:[m[K   required from here
+[01m[K/usr/include/boost/function/function_template.hpp:118:11:[m[K [01;31m[Kerror: [m[Kinvalid initialization of reference of type ‘[01m[Kconst boost::shared_ptr<const geometry_msgs::TwistStamped_<std::allocator<void> > >&[m[K’ from expression of type ‘[01m[Kconst boost::shared_ptr<const std_msgs::Float64_<std::allocator<void> > >[m[K’
+           [01;31m[KB[m[KOOST_FUNCTION_RETURN(f(BOOST_FUNCTION_ARGS));
+           [01;31m[K^[m[K
+/usr/include/boost/function/function_template.hpp: In instantiation of ‘[01m[Kstatic void boost::detail::function::void_function_invoker1<FunctionPtr, R, T0>::invoke(boost::detail::function::function_buffer&, T0) [with FunctionPtr = void (*)(const boost::shared_ptr<const sensor_msgs::Imu_<std::allocator<void> > >&); R = void; T0 = const boost::shared_ptr<const std_msgs::Float64_<std::allocator<void> > >&][m[K’:
+[01m[K/usr/include/boost/function/function_template.hpp:925:38:[m[K   required from ‘[01m[Kvoid boost::function1<R, T1>::assign_to(Functor) [with Functor = void (*)(const boost::shared_ptr<const sensor_msgs::Imu_<std::allocator<void> > >&); R = void; T0 = const boost::shared_ptr<const std_msgs::Float64_<std::allocator<void> > >&][m[K’
+[01m[K/usr/include/boost/function/function_template.hpp:716:7:[m[K   required from ‘[01m[Kboost::function1<R, T1>::function1(Functor, typename boost::enable_if_c<(! boost::is_integral<Functor>::value), int>::type) [with Functor = void (*)(const boost::shared_ptr<const sensor_msgs::Imu_<std::allocator<void> > >&); R = void; T0 = const boost::shared_ptr<const std_msgs::Float64_<std::allocator<void> > >&; typename boost::enable_if_c<(! boost::is_integral<Functor>::value), int>::type = int][m[K’
+[01m[K/usr/include/boost/function/function_template.hpp:1061:16:[m[K   required from ‘[01m[Kboost::function<R(T0)>::function(Functor, typename boost::enable_if_c<(! boost::is_integral<Functor>::value), int>::type) [with Functor = void (*)(const boost::shared_ptr<const sensor_msgs::Imu_<std::allocator<void> > >&); R = void; T0 = const boost::shared_ptr<const std_msgs::Float64_<std::allocator<void> > >&; typename boost::enable_if_c<(! boost::is_integral<Functor>::value), int>::type = int][m[K’
+[01m[K/home/saumya/catkin_ws2/src/quad/src/impulse_node.cpp:47:98:[m[K   required from here
+[01m[K/usr/include/boost/function/function_template.hpp:118:11:[m[K [01;31m[Kerror: [m[Kinvalid initialization of reference of type ‘[01m[Kconst boost::shared_ptr<const sensor_msgs::Imu_<std::allocator<void> > >&[m[K’ from expression of type ‘[01m[Kconst boost::shared_ptr<const std_msgs::Float64_<std::allocator<void> > >[m[K’
+make[2]: *** [CMakeFiles/impulse_commands.dir/src/impulse_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/impulse_commands.dir/all] Error 2
+make: *** [all] Error 2

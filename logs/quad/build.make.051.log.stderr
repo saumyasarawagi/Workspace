@@ -1,0 +1,17 @@
+[01m[K/home/saumya/catkin_ws2/src/quad/src/offb_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/saumya/catkin_ws2/src/quad/src/offb_node.cpp:91:6:[m[K [01;35m[Kwarning: [m[Kinit-statement in selection statements only available with -std=c++1z or -std=gnu++1z
+   if([01;35m[K([m[Kros::Time::now() - last_request > ros::Duration(5.0)){
+      [01;35m[K^[m[K
+[01m[K/home/saumya/catkin_ws2/src/quad/src/offb_node.cpp:91:60:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K{[m[K’ token
+   if((ros::Time::now() - last_request > ros::Duration(5.0))[01;31m[K{[m[K
+                                                            [01;31m[K^[m[K
+[01m[K/home/saumya/catkin_ws2/src/quad/src/offb_node.cpp:104:5:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kreturn[m[K’
+     [01;31m[Kreturn[m[K 0;
+     [01;31m[K^~~~~~[m[K
+[01m[K/home/saumya/catkin_ws2/src/quad/src/offb_node.cpp:104:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kreturn[m[K’
+[01m[K/home/saumya/catkin_ws2/src/quad/src/offb_node.cpp:105:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+ [01;31m[K}[m[K
+ [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/offb_commands.dir/src/offb_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/offb_commands.dir/all] Error 2
+make: *** [all] Error 2

@@ -1,0 +1,18 @@
+digraph G {
+"map" -> "map_ned"[label="Broadcaster: /mavros\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 371.792 sec old)\nBuffer length: 0.000 sec\n"];
+"odom" -> "odom_ned"[label="Broadcaster: /mavros\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 371.792 sec old)\nBuffer length: 0.000 sec\n"];
+"base_link" -> "base_link_frd"[label="Broadcaster: /mavros\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 371.792 sec old)\nBuffer length: 0.000 sec\n"];
+"base_footprint" -> "base_link"[label="Broadcaster: /base_base_broadcaster\nAverage rate: 13.333 Hz\nMost recent transform: 371.828 ( -0.036 sec old)\nBuffer length: 0.300 sec\n"];
+"map" -> "scanmatcher_frame"[label="Broadcaster: /static_transform_publisher_1597077653642483233\nAverage rate: 52.707 Hz\nMost recent transform: 371.794 ( -0.002 sec old)\nBuffer length: 0.702 sec\n"];
+"map" -> "nav"[label="Broadcaster: /hector_mapping\nAverage rate: 8.287 Hz\nMost recent transform: 371.816 ( -0.024 sec old)\nBuffer length: 0.724 sec\n"];
+"nav" -> "base_footprint"[label="Broadcaster: /nav_base_broadcaster\nAverage rate: 13.333 Hz\nMost recent transform: 371.844 ( -0.052 sec old)\nBuffer length: 0.300 sec\n"];
+"base_footprint" -> "rplidar_link"[label="Broadcaster: /base_link_laser_broadcaster\nAverage rate: 13.333 Hz\nMost recent transform: 371.828 ( -0.036 sec old)\nBuffer length: 0.300 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 371.792"[ shape=plaintext ] ;
+ }->"map";
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 371.792"[ shape=plaintext ] ;
+ }->"odom";
+}

@@ -1,0 +1,166 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/saumya/catkin_ws2/build/hector_geotiff/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_25831/fast"
+/usr/bin/make -f CMakeFiles/cmTC_25831.dir/build.make CMakeFiles/cmTC_25831.dir/build
+make[1]: Entering directory '/home/saumya/catkin_ws2/build/hector_geotiff/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_25831.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_25831.dir/CheckSymbolExists.c.o   -c /home/saumya/catkin_ws2/build/hector_geotiff/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_25831
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_25831.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_25831.dir/CheckSymbolExists.c.o  -o cmTC_25831 
+CMakeFiles/cmTC_25831.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_25831.dir/build.make:97: recipe for target 'cmTC_25831' failed
+make[1]: *** [cmTC_25831] Error 1
+make[1]: Leaving directory '/home/saumya/catkin_ws2/build/hector_geotiff/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_25831/fast' failed
+make: *** [cmTC_25831/fast] Error 2
+
+File /home/saumya/catkin_ws2/build/hector_geotiff/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/saumya/catkin_ws2/build/hector_geotiff/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_fa864/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fa864.dir/build.make CMakeFiles/cmTC_fa864.dir/build
+make[1]: Entering directory '/home/saumya/catkin_ws2/build/hector_geotiff/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fa864.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_fa864.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_fa864
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fa864.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_fa864.dir/CheckFunctionExists.c.o  -o cmTC_fa864 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_fa864.dir/build.make:97: recipe for target 'cmTC_fa864' failed
+make[1]: *** [cmTC_fa864] Error 1
+make[1]: Leaving directory '/home/saumya/catkin_ws2/build/hector_geotiff/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_fa864/fast' failed
+make: *** [cmTC_fa864/fast] Error 2
+
+
+Determining if the Q_WS_WIN exist failed with the following output:
+Change Dir: /home/saumya/catkin_ws2/build/hector_geotiff/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a023f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a023f.dir/build.make CMakeFiles/cmTC_a023f.dir/build
+make[1]: Entering directory '/home/saumya/catkin_ws2/build/hector_geotiff/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a023f.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++   -I/usr/include/qt4   -o CMakeFiles/cmTC_a023f.dir/CheckSymbolExists.cxx.o -c /home/saumya/catkin_ws2/build/hector_geotiff/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/saumya/catkin_ws2/build/hector_geotiff/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/saumya/catkin_ws2/build/hector_geotiff/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_WIN’ was not declared in this scope
+   return ((int*)(&Q_WS_WIN))[argc];
+                   ^~~~~~~~
+/home/saumya/catkin_ws2/build/hector_geotiff/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: note: suggested alternative: ‘Q_WS_X11’
+   return ((int*)(&Q_WS_WIN))[argc];
+                   ^~~~~~~~
+                   Q_WS_X11
+CMakeFiles/cmTC_a023f.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_a023f.dir/CheckSymbolExists.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_a023f.dir/CheckSymbolExists.cxx.o] Error 1
+make[1]: Leaving directory '/home/saumya/catkin_ws2/build/hector_geotiff/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_a023f/fast' failed
+make: *** [cmTC_a023f/fast] Error 2
+
+File /home/saumya/catkin_ws2/build/hector_geotiff/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_WIN
+  return ((int*)(&Q_WS_WIN))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_QWS exist failed with the following output:
+Change Dir: /home/saumya/catkin_ws2/build/hector_geotiff/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ca699/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ca699.dir/build.make CMakeFiles/cmTC_ca699.dir/build
+make[1]: Entering directory '/home/saumya/catkin_ws2/build/hector_geotiff/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ca699.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++   -I/usr/include/qt4   -o CMakeFiles/cmTC_ca699.dir/CheckSymbolExists.cxx.o -c /home/saumya/catkin_ws2/build/hector_geotiff/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/saumya/catkin_ws2/build/hector_geotiff/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/saumya/catkin_ws2/build/hector_geotiff/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_QWS’ was not declared in this scope
+   return ((int*)(&Q_WS_QWS))[argc];
+                   ^~~~~~~~
+/home/saumya/catkin_ws2/build/hector_geotiff/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: note: suggested alternative: ‘Q_WS_X11’
+   return ((int*)(&Q_WS_QWS))[argc];
+                   ^~~~~~~~
+                   Q_WS_X11
+CMakeFiles/cmTC_ca699.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_ca699.dir/CheckSymbolExists.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_ca699.dir/CheckSymbolExists.cxx.o] Error 1
+make[1]: Leaving directory '/home/saumya/catkin_ws2/build/hector_geotiff/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_ca699/fast' failed
+make: *** [cmTC_ca699/fast] Error 2
+
+File /home/saumya/catkin_ws2/build/hector_geotiff/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_QWS
+  return ((int*)(&Q_WS_QWS))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_MAC exist failed with the following output:
+Change Dir: /home/saumya/catkin_ws2/build/hector_geotiff/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b9a92/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b9a92.dir/build.make CMakeFiles/cmTC_b9a92.dir/build
+make[1]: Entering directory '/home/saumya/catkin_ws2/build/hector_geotiff/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b9a92.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++   -I/usr/include/qt4   -o CMakeFiles/cmTC_b9a92.dir/CheckSymbolExists.cxx.o -c /home/saumya/catkin_ws2/build/hector_geotiff/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/saumya/catkin_ws2/build/hector_geotiff/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/saumya/catkin_ws2/build/hector_geotiff/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_MAC’ was not declared in this scope
+   return ((int*)(&Q_WS_MAC))[argc];
+                   ^~~~~~~~
+/home/saumya/catkin_ws2/build/hector_geotiff/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: note: suggested alternative: ‘Q_WS_X11’
+   return ((int*)(&Q_WS_MAC))[argc];
+                   ^~~~~~~~
+                   Q_WS_X11
+CMakeFiles/cmTC_b9a92.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_b9a92.dir/CheckSymbolExists.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_b9a92.dir/CheckSymbolExists.cxx.o] Error 1
+make[1]: Leaving directory '/home/saumya/catkin_ws2/build/hector_geotiff/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_b9a92/fast' failed
+make: *** [cmTC_b9a92/fast] Error 2
+
+File /home/saumya/catkin_ws2/build/hector_geotiff/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_MAC
+  return ((int*)(&Q_WS_MAC))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+

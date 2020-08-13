@@ -1,0 +1,11 @@
+[01m[K/home/saumya/catkin_ws2/src/quad/src/offb_node.cpp:[m[K In function ‘[01m[Kvoid pose_cb(const ConstPtr&)[m[K’:
+[01m[K/home/saumya/catkin_ws2/src/quad/src/offb_node.cpp:16:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_pose[m[K’ was not declared in this scope
+     [01;31m[Kcurrent_pose[m[K = *msg;
+     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/saumya/catkin_ws2/src/quad/src/offb_node.cpp:16:5:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kcurrent_state[m[K’
+     [01;36m[Kcurrent_pose[m[K = *msg;
+     [01;36m[K^~~~~~~~~~~~[m[K
+     [32m[Kcurrent_state[m[K
+make[2]: *** [CMakeFiles/offb_commands.dir/src/offb_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/offb_commands.dir/all] Error 2
+make: *** [all] Error 2

@@ -1,0 +1,1 @@
+/home/saumya/catkin_ws2/devel/.private/hector_nav_msgs/share/roseus/ros/hector_nav_msgs/manifest.l

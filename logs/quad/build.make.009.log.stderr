@@ -1,0 +1,16 @@
+[01m[K/home/saumya/catkin_ws2/src/quad/src/offb_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/saumya/catkin_ws2/src/quad/src/offb_node.cpp:80:8:[m[K [01;35m[Kwarning: [m[Kinit-statement in selection statements only available with -std=c++1z or -std=gnu++1z
+     if([01;35m[Ktakeoff_client[m[K.call(take_cmd) &&
+        [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/saumya/catkin_ws2/src/quad/src/offb_node.cpp:81:34:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K{[m[K’ token
+       (take_cmd.response.success)[01;31m[K{[m[K
+                                  [01;31m[K^[m[K
+[01m[K/home/saumya/catkin_ws2/src/quad/src/offb_node.cpp:84:24:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+         ros::spinOnce()[01;31m[K;[m[K
+                        [01;31m[K^[m[K
+[01m[K/home/saumya/catkin_ws2/src/quad/src/offb_node.cpp:84:22:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[Kros::spinOnce()[m[K’ from ‘[01m[Kvoid[m[K’ to ‘[01m[Kbool[m[K’
+         [01;31m[Kros::spinOnce()[m[K;
+         [01;31m[K~~~~~~~~~~~~~^~[m[K
+make[2]: *** [CMakeFiles/offb_commands.dir/src/offb_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/offb_commands.dir/all] Error 2
+make: *** [all] Error 2

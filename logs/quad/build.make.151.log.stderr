@@ -1,0 +1,21 @@
+[01m[K/home/saumya/catkin_ws2/src/quad/src/wind_estimation.cpp:[m[K In member function ‘[01m[Kvoid mavros::std_plugins::WindEstimationPlugin::handle_apm_wind(const mavlink_message_t*, mavlink::ardupilotmega::msg::WIND&)[m[K’:
+[01m[K/home/saumya/catkin_ws2/src/quad/src/wind_estimation.cpp:51:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs::TwistStamped_<std::allocator<void> >::_twist_type {aka struct geometry_msgs::Twist_<std::allocator<void> >}[m[K’ has no member named ‘[01m[Ktwist[m[K’; did you mean ‘[01m[KTwist_[m[K’?
+                  twist_cov->twist.[01;31m[Ktwist[m[K.linear.x = speed * std::sin(course);     // E
+                                   [01;31m[K^~~~~[m[K
+                                   [32m[KTwist_[m[K
+[01m[K/home/saumya/catkin_ws2/src/quad/src/wind_estimation.cpp:52:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs::TwistStamped_<std::allocator<void> >::_twist_type {aka struct geometry_msgs::Twist_<std::allocator<void> >}[m[K’ has no member named ‘[01m[Ktwist[m[K’; did you mean ‘[01m[KTwist_[m[K’?
+                  twist_cov->twist.[01;31m[Ktwist[m[K.linear.y = speed * std::cos(course);     // N
+                                   [01;31m[K^~~~~[m[K
+                                   [32m[KTwist_[m[K
+[01m[K/home/saumya/catkin_ws2/src/quad/src/wind_estimation.cpp:53:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs::TwistStamped_<std::allocator<void> >::_twist_type {aka struct geometry_msgs::Twist_<std::allocator<void> >}[m[K’ has no member named ‘[01m[Ktwist[m[K’; did you mean ‘[01m[KTwist_[m[K’?
+                  twist_cov->twist.[01;31m[Ktwist[m[K.linear.z = -wind.speed_z;// D -> U
+                                   [01;31m[K^~~~~[m[K
+                                   [32m[KTwist_[m[K
+[01m[K/home/saumya/catkin_ws2/src/quad/src/wind_estimation.cpp:[m[K In member function ‘[01m[Kvoid mavros::std_plugins::WindEstimationPlugin::handle_px4_wind(const mavlink_message_t*, mavlink::common::msg::WIND_COV&)[m[K’:
+[01m[K/home/saumya/catkin_ws2/src/quad/src/wind_estimation.cpp:65:59:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs::TwistStamped_<std::allocator<void> >::_twist_type {aka struct geometry_msgs::Twist_<std::allocator<void> >}[m[K’ has no member named ‘[01m[Ktwist[m[K’; did you mean ‘[01m[KTwist_[m[K’?
+                                          twist_cov->twist.[01;31m[Ktwist[m[K.linear);
+                                                           [01;31m[K^~~~~[m[K
+                                                           [32m[KTwist_[m[K
+make[2]: *** [CMakeFiles/quad.dir/src/wind_estimation.cpp.o] Error 1
+make[1]: *** [CMakeFiles/quad.dir/all] Error 2
+make: *** [all] Error 2

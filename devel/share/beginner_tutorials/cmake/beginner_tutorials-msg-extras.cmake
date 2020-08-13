@@ -1,0 +1,1 @@
+/home/saumya/catkin_ws2/devel/.private/beginner_tutorials/share/beginner_tutorials/cmake/beginner_tutorials-msg-extras.cmake

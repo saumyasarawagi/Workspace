@@ -1,0 +1,20 @@
+[01m[K/home/saumya/catkin_ws2/src/quad/src/impulse_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/saumya/catkin_ws2/src/quad/src/impulse_node.cpp:88:52:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K.[m[K’ token
+     impulse.request.reference_point = geometry_msgs[01;31m[K.[m[Kmsg.Point(x=0, y=0, z=-0.0281);
+                                                    [01;31m[K^[m[K
+[01m[K/home/saumya/catkin_ws2/src/quad/src/impulse_node.cpp:88:63:[m[K [01;31m[Kerror: [m[K‘[01m[Kx[m[K’ was not declared in this scope
+     impulse.request.reference_point = geometry_msgs.msg.Point([01;31m[Kx[m[K=0, y=0, z=-0.0281);
+                                                               [01;31m[K^[m[K
+[01m[K/home/saumya/catkin_ws2/src/quad/src/impulse_node.cpp:88:68:[m[K [01;31m[Kerror: [m[K‘[01m[Ky[m[K’ was not declared in this scope
+     impulse.request.reference_point = geometry_msgs.msg.Point(x=0, [01;31m[Ky[m[K=0, z=-0.0281);
+                                                                    [01;31m[K^[m[K
+[01m[K/home/saumya/catkin_ws2/src/quad/src/impulse_node.cpp:88:68:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kyn[m[K’
+     impulse.request.reference_point = geometry_msgs.msg.Point(x=0, [01;36m[Ky[m[K=0, z=-0.0281);
+                                                                    [01;36m[K^[m[K
+                                                                    [32m[Kyn[m[K
+[01m[K/home/saumya/catkin_ws2/src/quad/src/impulse_node.cpp:88:73:[m[K [01;31m[Kerror: [m[K‘[01m[Kz[m[K’ was not declared in this scope
+     impulse.request.reference_point = geometry_msgs.msg.Point(x=0, y=0, [01;31m[Kz[m[K=-0.0281);
+                                                                         [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/impulse_commands.dir/src/impulse_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/impulse_commands.dir/all] Error 2
+make: *** [all] Error 2

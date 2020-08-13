@@ -1,0 +1,14 @@
+[01m[K/home/saumya/catkin_ws2/src/quad/src/copy_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/saumya/catkin_ws2/src/quad/src/copy_node.cpp:115:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kset_mode_client[m[K’ was not declared in this scope
+     if( [01;31m[Kset_mode_client[m[K.call(offb_set_mode) &&
+         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/saumya/catkin_ws2/src/quad/src/copy_node.cpp:115:30:[m[K [01;31m[Kerror: [m[K‘[01m[Koffb_set_mode[m[K’ was not declared in this scope
+     if( set_mode_client.call([01;31m[Koffb_set_mode[m[K) &&
+                              [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/saumya/catkin_ws2/src/quad/src/copy_node.cpp:115:30:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Koffsetof[m[K’
+     if( set_mode_client.call([01;36m[Koffb_set_mode[m[K) &&
+                              [01;36m[K^~~~~~~~~~~~~[m[K
+                              [32m[Koffsetof[m[K
+make[2]: *** [CMakeFiles/copy_commands.dir/src/copy_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/copy_commands.dir/all] Error 2
+make: *** [all] Error 2

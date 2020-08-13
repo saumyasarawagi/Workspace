@@ -1,0 +1,1 @@
+/home/saumya/catkin_ws2/devel/.private/quad/share/quad/cmake/quadConfig-version.cmake

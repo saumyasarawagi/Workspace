@@ -1,0 +1,37 @@
+[01m[K/home/saumya/catkin_ws2/src/quad/src/offb_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/saumya/catkin_ws2/src/quad/src/offb_node.cpp:23:71:[m[K [01;31m[Kerror: [m[K‘[01m[KCommandTOL[m[K’ is not a member of ‘[01m[Kmavros_msgs[m[K’
+     ros::ServiceClient takeoff_client = nh.serviceClient<mavros_msgs::[01;31m[KCommandTOL[m[K>("mavros/cmd/takeoff");
+                                                                       [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/saumya/catkin_ws2/src/quad/src/offb_node.cpp:23:71:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KCommandBool[m[K’
+     ros::ServiceClient takeoff_client = nh.serviceClient<mavros_msgs::[01;36m[KCommandTOL[m[K>("mavros/cmd/takeoff");
+                                                                       [01;36m[K^~~~~~~~~~[m[K
+                                                                       [32m[KCommandBool[m[K
+[01m[K/home/saumya/catkin_ws2/src/quad/src/offb_node.cpp:23:71:[m[K [01;31m[Kerror: [m[K‘[01m[KCommandTOL[m[K’ is not a member of ‘[01m[Kmavros_msgs[m[K’
+[01m[K/home/saumya/catkin_ws2/src/quad/src/offb_node.cpp:23:71:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KCommandBool[m[K’
+     ros::ServiceClient takeoff_client = nh.serviceClient<mavros_msgs::[01;36m[KCommandTOL[m[K>("mavros/cmd/takeoff");
+                                                                       [01;36m[K^~~~~~~~~~[m[K
+                                                                       [32m[KCommandBool[m[K
+[01m[K/home/saumya/catkin_ws2/src/quad/src/offb_node.cpp:23:103:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kros::NodeHandle::serviceClient<<expression error> >(const char [19])[m[K’
+     ros::ServiceClient takeoff_client = nh.serviceClient<mavros_msgs::CommandTOL>("mavros/cmd/takeoff"[01;31m[K)[m[K;
+                                                                                                       [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/saumya/catkin_ws2/src/quad/src/offb_node.cpp:1[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:1240:17:[m[K [01;36m[Knote: [m[Kcandidate: template<class MReq, class MRes> ros::ServiceClient ros::NodeHandle::serviceClient(const string&, bool, const M_string&)
+   ServiceClient [01;36m[KserviceClient[m[K(const std::string& service_name, bool persistent = false,
+                 [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:1240:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/saumya/catkin_ws2/src/quad/src/offb_node.cpp:23:103:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+     ros::ServiceClient takeoff_client = nh.serviceClient<mavros_msgs::CommandTOL>("mavros/cmd/takeoff"[01;31m[K)[m[K;
+                                                                                                       [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/saumya/catkin_ws2/src/quad/src/offb_node.cpp:1[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:1260:17:[m[K [01;36m[Knote: [m[Kcandidate: template<class Service> ros::ServiceClient ros::NodeHandle::serviceClient(const string&, bool, const M_string&)
+   ServiceClient [01;36m[KserviceClient[m[K(const std::string& service_name, bool persistent = false,
+                 [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:1260:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/saumya/catkin_ws2/src/quad/src/offb_node.cpp:23:103:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+     ros::ServiceClient takeoff_client = nh.serviceClient<mavros_msgs::CommandTOL>("mavros/cmd/takeoff"[01;31m[K)[m[K;
+                                                                                                       [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/offb_commands.dir/src/offb_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/offb_commands.dir/all] Error 2
+make: *** [all] Error 2

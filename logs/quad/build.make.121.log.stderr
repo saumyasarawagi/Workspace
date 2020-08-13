@@ -1,0 +1,21 @@
+[01m[K/home/saumya/catkin_ws2/src/quad/src/impulse_node.cpp:44:36:[m[K [01;31m[Kerror: [m[K‘[01m[KVector3Stamped[m[K’ in namespace ‘[01m[Kgeometry_msgs[m[K’ does not name a type
+ void accel_cb(const geometry_msgs::[01;31m[KVector3Stamped[m[K::ConstPtr& msg){
+                                    [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/saumya/catkin_ws2/src/quad/src/impulse_node.cpp:44:60:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+ void accel_cb(const geometry_msgs::Vector3Stamped::ConstPtr[01;31m[K&[m[K msg){
+                                                            [01;31m[K^[m[K
+[01m[K/home/saumya/catkin_ws2/src/quad/src/impulse_node.cpp:44:60:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+[01m[K/home/saumya/catkin_ws2/src/quad/src/impulse_node.cpp:44:62:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kmsg[m[K’
+ void accel_cb(const geometry_msgs::Vector3Stamped::ConstPtr& [01;31m[Kmsg[m[K){
+                                                              [01;31m[K^~~[m[K
+[01m[K/home/saumya/catkin_ws2/src/quad/src/impulse_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/saumya/catkin_ws2/src/quad/src/impulse_node.cpp:63:126:[m[K [01;31m[Kerror: [m[K‘[01m[Kaccel_cb[m[K’ was not declared in this scope
+     ros::Subscriber currentAccel = nh.subscribe<geometry_msgs::AccelWithCovarianceStamped>("mavros/local_position/accel",10, [01;31m[Kaccel_cb[m[K);
+                                                                                                                              [01;31m[K^~~~~~~~[m[K
+[01m[K/home/saumya/catkin_ws2/src/quad/src/impulse_node.cpp:63:126:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kpose_cb[m[K’
+     ros::Subscriber currentAccel = nh.subscribe<geometry_msgs::AccelWithCovarianceStamped>("mavros/local_position/accel",10, [01;36m[Kaccel_cb[m[K);
+                                                                                                                              [01;36m[K^~~~~~~~[m[K
+                                                                                                                              [32m[Kpose_cb[m[K
+make[2]: *** [CMakeFiles/impulse_commands.dir/src/impulse_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/impulse_commands.dir/all] Error 2
+make: *** [all] Error 2

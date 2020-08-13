@@ -1,0 +1,8 @@
+[01m[K/home/saumya/catkin_ws2/src/quad/src/offb_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/saumya/catkin_ws2/src/quad/src/offb_node.cpp:80:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kmavros_msgs::CommandTOL::Request {aka struct mavros_msgs::CommandTOLRequest_<std::allocator<void> >}[m[K’ has no member named ‘[01m[Kpitch[m[K’; did you mean ‘[01m[Kmin_pitch[m[K’?
+            take_cmd.request.[01;31m[Kpitch[m[K = 0;
+                             [01;31m[K^~~~~[m[K
+                             [32m[Kmin_pitch[m[K
+make[2]: *** [CMakeFiles/offb_commands.dir/src/offb_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/offb_commands.dir/all] Error 2
+make: *** [all] Error 2

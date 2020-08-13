@@ -1,0 +1,9 @@
+[01m[K/home/saumya/catkin_ws2/src/quad/src/offb_node.cpp:107:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kreturn[m[K’
+     [01;31m[Kreturn[m[K 0;
+     [01;31m[K^~~~~~[m[K
+[01m[K/home/saumya/catkin_ws2/src/quad/src/offb_node.cpp:108:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+ [01;31m[K}[m[K
+ [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/offb_commands.dir/src/offb_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/offb_commands.dir/all] Error 2
+make: *** [all] Error 2
